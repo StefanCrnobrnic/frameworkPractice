@@ -22,26 +22,12 @@ public class LoginTests extends BaseTests {
     }
 
 
+    @Test
+    public void blankInputFieldAction() {
+        driver.findElement(usernameInputField).sendKeys("");
+        driver.findElement(passwordInputField).sendKeys("");
+        driver.findElement(loginButton).click();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        driver.findElement(errorMessage).isDisplayed();
+    }
 }
