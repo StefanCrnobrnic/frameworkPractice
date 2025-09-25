@@ -7,7 +7,9 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.edge.EdgeDriver;
+
 
 import java.time.Duration;
 
@@ -20,7 +22,9 @@ public class BaseTests {
 
     @BeforeClass
     public static void beforeClass() throws Exception {
+
     driver = new EdgeDriver();
+
     driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 //        max time to wait for a page load
