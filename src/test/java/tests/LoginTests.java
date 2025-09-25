@@ -30,4 +30,45 @@ public class LoginTests extends BaseTests {
 
         driver.findElement(errorMessage).isDisplayed();
     }
+    @Test
+    public void blankInputFieldAction1234() {
+        driver.findElement(usernameInputField).sendKeys("");
+        driver.findElement(passwordInputField).sendKeys("");
+        driver.findElement(loginButton).click();
+
+        driver.findElement(errorMessage).isDisplayed();
+    }
+    @Test
+    public void blankInputFieldAction123456789() {
+        driver.findElement(usernameInputField).sendKeys("");
+        driver.findElement(passwordInputField).sendKeys("");
+        driver.findElement(loginButton).click();
+
+        driver.findElement(errorMessage).isDisplayed();
+    }
+    @Test
+    public void blankInputFieldAction1234567213189() {
+        driver.findElement(usernameInputField).sendKeys("");
+        driver.findElement(passwordInputField).sendKeys("");
+        driver.findElement(loginButton).click();
+
+        driver.findElement(errorMessage).isDisplayed();}
+
+    @Test
+    public void blankInputFieldAction121121313456789() {
+        driver.findElement(usernameInputField).sendKeys("");
+        driver.findElement(passwordInputField).sendKeys("");
+        driver.findElement(loginButton).click();
+
+        driver.findElement(errorMessage).isDisplayed();
+    }
+    @Test
+    public void blankInputFieldAction121121312313123123456789() {
+        driver.findElement(usernameInputField).sendKeys("");
+        driver.findElement(passwordInputField).sendKeys("");
+        driver.findElement(loginButton).click();
+
+        driver.findElement(errorMessage).isDisplayed();
+    }
+
 }
